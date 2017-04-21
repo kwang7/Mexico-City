@@ -1,3 +1,4 @@
+import cs1.Keyboard;
 public class HelpDesk {
     
     private ArrayPriorityQueue<Ticket> _tickets;
@@ -12,5 +13,10 @@ public class HelpDesk {
 
     public static void main(String [] args){
 	openTicket(0);
+	String start = "Hey man, whats the name?";
+	System.out.print(start);
+	String name = Keyboard.readString();
+	
     }
+	
 }
