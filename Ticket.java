@@ -28,22 +28,22 @@ public class Ticket implements Comparable {
     public String getDesc(){
 	return _desc;
     }
-    ///FINSGH
+    ///FINiSHed!
     //mutators
     public int setPriority(int jasper){
-	return _priority;
+	int ret = _priority;
+	_priority = jasper;
+	return ret;
     }
-    
-    public int setUserName(String jasper){
-	return _priority;
+    public String setUserName(String jasper){
+	String ret = _userName;
+	_userName = jasper;
+	return ret;
     }
-    public int setDesc(String jasper){
-	return _priority;
+    public String setDesc(String jasper){
+	String ret = _desc;
+	_desc = jasper;    
+	return ret;
     }
-    
-    
-    
-    
-
 
 }
