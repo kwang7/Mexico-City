@@ -35,11 +35,13 @@ public class Ticket implements Comparable {
 	_priority = jasper;
 	return ret;
     }
+    
     public String setUserName(String jasper){
 	String ret = _userName;
 	_userName = jasper;
 	return ret;
     }
+    
     public String setDesc(String jasper){
 	String ret = _desc;
 	_desc = jasper;    
