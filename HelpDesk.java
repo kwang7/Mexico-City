@@ -51,6 +51,7 @@ public class HelpDesk {
 	System.out.println("OK, " + name + " NOW WE WILL HELP YOU.");
 	Ticket hello = new Ticket ( name, desc, _count, prio );
 	_tickets.add( hello);
+	
     }
 
     public void close(){
@@ -70,7 +71,13 @@ public class HelpDesk {
     }
     
     public static void main(String [] args){
-	openTicket();
-	openTicket();
+	HelpDesk help = new HelpDesk();
+	help.openTicket();
+	help.openTicket();
+	help.openTicket();
+	help.close();
+	help.close();
+	help.close();
+	
     }
 }
