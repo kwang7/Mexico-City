@@ -2,13 +2,13 @@ import cs1.Keyboard;
 
 public class HelpDesk {
     
-    private ArrayPriorityQueue<Ticket> _tickets;
+    private static ArrayPriorityQueue<Ticket> _tickets;
     
     public HelpDesk(){
 	_tickets = new ArrayPriorityQueue<Ticket>();
     }
     
-    public void openTicket(int id){
+    public static void openTicket(int id){
 	_tickets.add(new Ticket("Bob", "no,", id, 0));
     }
 
@@ -19,10 +19,10 @@ public class HelpDesk {
 	String name = Keyboard.readString();
 	
 	System.out.println("What's your problem?? \n1. My computer won't turn on \n2. My computer is slow/frozen \n3.My internet isn't working");
-
+	int d = Keyboard.readInt();
 	String desc;
 	int prio;
-	if ( d == 1 ) {
+	if (  d == 1 ) {
 	    desc = "My computer won't turn on";
 	    prio = 1;
 	}
