@@ -24,10 +24,10 @@ public class HelpDesk {
     public static void openTicket(){
 	
 	String start = "HELLO WHAT IS YOUR NAME";
-	System.out.print(start);
+	System.out.println(start);
 	String name = Keyboard.readString();
 	
-	System.out.println("HELLO WHAT IS YOUR PROBLEM?? \n1. My computer won't turn on \n2. My computer is slow/frozen \n3.My internet isn't working");
+	System.out.println("HELLO WHAT IS YOUR PROBLEM?? \n1. My computer won't turn on \n2. My computer is slow/frozen \n3. My internet isn't working");
 	int d = Keyboard.readInt();
 	String desc;
 	int prio;
@@ -49,7 +49,8 @@ public class HelpDesk {
 	    prio = 9999999;
 	}
 	System.out.println("OK, " + name + " NOW WE WILL HELP YOU.");
-	_tickets.add(new Ticket(name, desc, _count, prio));
+	Ticket hello = new Ticket ( name, desc, _count, prio );
+	_tickets.add( hello);
     }
 
     public void close(){
